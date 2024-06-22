@@ -1,3 +1,6 @@
+It seems you'd like the README.md to be structured and formatted in a comprehensive way. Here's how you can organize your document with the provided information:
+
+---
 
 # Diary Application
 
@@ -138,154 +141,31 @@ diary-app/
 
 ## Style Guides
 
+### Color Scheme
 
-## Colors Scheme
+- **Primary Colors:**
+  - **diary-soft-blue**: #EEF5FF (Soft Blue)
+  - **diary-light-azure**: #B4D4FF (Light Azure)
 
-The Diary Application uses a cohesive color scheme to enhance its visual appeal and user experience:
+- **Background Colors:**
+  - **diary-sky-blue**: #86B6F6 (Sky Blue)
+  - **diary-deep-teal**: #176B87 (Deep Teal)
 
-- **Primary Color**: `#2F4858`
-  - *Usage*: Main text color and accents.
+- **Text Colors:**
+  - **diary-text-white**: #FFFFFF (White)
+  - **diary-text-gray**: #757575 (Warm Gray)
 
-- **Background Color**: `#F7F9FB`
-  - *Usage*: Background of the application.
+### Fonts
 
-- **Accent Color**: `#E93636`
-  - *Usage*: Highlighted elements and interactive states.
+- **Google Font:** Lora ([Link](https://fonts.google.com/specimen/Lora))
+- **Adobe Font:** Raleway ([Link](https://fonts.google.com/specimen/Raleway))
 
-- **Secondary Color**: `#A0B181`
-  - *Usage*: Borders and subtle accents.
+#### Font Usage
 
-## Color Integration
-
-### CSS Usage
-
-Apply the colors to relevant elements in your CSS file (`list.css`):
-
-```css
-body {
-    color: #2F4858;
-    background-color: #F7F9FB;
-    /* Additional styles */
-}
-
-.header {
-    background-color: #FFFFFF;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Additional styles */
-}
-
-.nav-bar {
-    background-color: #FFFFFF;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Additional styles */
-}
-
-.tab-bar {
-    background-color: #FFFFFF;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Additional styles */
-}
-
-.calender {
-    background-color: #FFFFFF;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Additional styles */
-}
-
-.dates div:hover {
-    background-color: #BDBDBD;
-    /* Additional styles */
-}
-
-.list-container {
-    background-color: #F7F9FB;
-    /* Additional styles */
-}
-
-.body-text span {
-    color: #E93636;
-    /* Additional styles */
-}
-
-.body-text span:hover {
-    color: #B70000;
-    /* Additional styles */
-}
-
-.footer-container {
-    background-color: #FFFFFF;
-    /* Additional styles */
-}
-```
-
-### Additional Notes
-
-- Ensure consistent use of colors across different components and sections of the application.
-- Use the color values provided to maintain visual harmony and user interface coherence.
-- Test the application on various devices and screen sizes to ensure colors appear as intended.
-- For accessibility considerations, ensure sufficient color contrast for text and interactive elements.
-
----
-
-This documentation provides clarity on the color palette used in your Diary Application, along with practical instructions on how to implement and maintain color styles in your CSS files. Adjust the headings and content as per your project's specific requirements and conventions.
-
-## Fonts Used
-
-The Diary Application utilizes the following fonts to enhance its visual presentation:
-
-- **Open Sans**
-  - *Usage*: General text throughout the application.
-  
-- **Merriweather**
-  - *Usage*: Date display in the calendar section.
-  
-- **Lato**
-  - *Usage*: Days of the week in the calendar section.
-  
-- **Playfair Display**
-  - *Usage*: Headers and titles in various sections.
-
-## Font Integration
-```
-
-### CSS Usage
-
-
-```css
-body {
-    font-family: 'Open Sans', sans-serif;
-    /* Additional styles */
-}
-
-.calender {
-    font-family: 'Merriweather', serif;
-    /* Additional styles */
-}
-
-.days div, .dates div {
-    font-family: 'Lato', sans-serif;
-    /* Additional styles */
-}
-
-.header h1 {
-    font-family: 'Playfair Display', serif;
-    /* Additional styles */
-}
-```
-
-### Fallback Mechanism
-
-Ensure your CSS provides fallback fonts or relies on browser defaults in case Google Fonts are not loaded or unavailable.
-
-## Additional Notes
-
-- Make sure to test the application on different devices and browsers to ensure consistent typography and layout.
-- Refer to the `list.css` file for specific styles and adjustments related to typography and fonts.
-- For any issues with font loading or display, debug using browser developer tools and verify the network requests for font files.
-
----
-
-This organized documentation provides a clear structure for understanding how fonts are integrated into your Diary Application, ensuring readability and maintainability for future updates or modifications. Adjust the headings and content as per your project's specific needs.
+- **Headings:** Lora, 700 weight
+- **Subheadings:** Lora, 400 weight
+- **Body Text:** Raleway, 400 weight
+- **Quotes and Special Text:** Raleway, 400 italic
 
 ### Space
 
