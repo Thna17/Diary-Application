@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../src/css/list.css">
     <link rel="stylesheet" href="../src/css/view-card.css">
     <link rel="stylesheet" href="../src/css/write-card.css">
+    <script src="../src/js/add.js" defer></script>
 </head>
 <body>
     <div class="nav-bar">
@@ -113,9 +114,9 @@
                         </svg>
                     </button>
                 </div>
-                <div class="heading">
+                <div class="heading" id="heading">
                     <h2>
-                        <input type="text" placeholder="Untitled" class="input-title">
+                        <input type="text" placeholder="Untitled" class="input-title" id="input-title">
                     </h2>
                 </div>
                 <div class="meta-info">
@@ -135,7 +136,7 @@
                     <div class="tag">
                         <h3>Tag:</h3>
                         <h3>
-                            <input type="text" placeholder="Empty" class="input-tag">
+                            <input type="text" placeholder="Empty" class="input-tag" id="input-tag">
                         </h3> 
                     </div>
                 </div>
@@ -147,8 +148,15 @@
                 </div>
                 <hr class="line">
                 <div class="body-text">
-                    <textarea placeholder="Write Something..." class="input-body-text"></textarea>
+                    <textarea placeholder="Write Something..." class="input-body-text" id="input-body-text"></textarea>
                 </div>
+                <button class="accept-button" id="accept-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#ffffff" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.59 8.59L11 15.17l-2.59-2.58L7 14l4 4 8-8-1.41-1.41z"/>
+                    </svg>
+                    Accept
+                </button>
+                
             </div>
         </div>
 
