@@ -274,10 +274,16 @@ body {
     border-radius: 50%;
 }
 
-.body-text {
+.body-text p{
     color: var(--color-gray);
     line-height: 1.6;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
+
 
 .body-text span {
     color: var(--color-accent);
