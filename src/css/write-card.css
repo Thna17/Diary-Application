@@ -4,6 +4,7 @@
     color: #2F4858;
     font-size: 36px;
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
 
 }
 .heading input:focus {
@@ -28,7 +29,10 @@
     text-align: left; 
     border: none;
     height: 300px;
-    max-height: 500px;
+    max-height: 800px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    
 }
 
 .input-tag:focus, .input-body-text:focus {
