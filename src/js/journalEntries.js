@@ -1,5 +1,5 @@
 const listContainer = document.querySelector('.list-container');
-const journalCards = JSON.parse(localStorage.getItem('journalCards'));
+const journalCards = JSON.parse(localStorage.getItem('journalCards')) || [];
 
 const displayJournalCards = () => {
     listContainer.innerHTML = '';
@@ -21,8 +21,7 @@ const displayJournalCards = () => {
                 </div>
             </div>
             <div class="body-text">
-                <p>${journalCard.text} </p>
-                
+                <p>${journalCard.text}</p>
             </div>
             <div class="span">Read More</div>
         `;
@@ -42,10 +41,6 @@ const displayJournalCards = () => {
         listContainer.appendChild(subList);
     });
 };
-
-
-
-
 
 // Call displayJournalCards to render the journal cards
 displayJournalCards();

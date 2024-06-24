@@ -1,4 +1,7 @@
 const addButtons = document.querySelectorAll('.add-button');
+const inputHeading = document.getElementById('input-title');
+const inputTag = document.getElementById('input-tag');
+const inputText = document.getElementById('input-body-text');
 
 const addCard = () => {
     const storedCards = localStorage.getItem('journalCards');
@@ -13,16 +16,7 @@ const addCard = () => {
     }
 };
 
-const addNewCard = () => {
-    inputHeading.value = '';
-    inputTag.value = '';
-    inputText.value = '';
 
-}
-
-addButtons.forEach(button => {
-    button.addEventListener('click', addNewCard)
-})
 
 const navigateAddButton = () => {
     addButtons.forEach(button => {

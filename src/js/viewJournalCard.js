@@ -1,3 +1,4 @@
+const editbutton = document.getElementById('edit-button')
 const selectedJournal = JSON.parse(localStorage.getItem('selectedJournal'));
 
 const viewJournal = () => {
@@ -8,6 +9,10 @@ const viewJournal = () => {
 viewJournal();
 
     
-
+const navigateEditPage = () => {
+    window.location.href = '../pages/edit.html';
+  
+}
+editbutton.addEventListener('click', navigateEditPage)
 
 
