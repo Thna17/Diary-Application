@@ -7,9 +7,7 @@ const editJournal = () => {
         document.querySelector('.heading input').value = selectedJournal.heading || '';
         document.querySelector('.meta-info .tag input').value = selectedJournal.tag || '';
         document.querySelector('.body-text textarea').value = selectedJournal.text || '';
-    } else {
-        console.log('No selected journal found.');
-    }
+    } 
 };
 
 const findIndexById = (journalCards, idJournal) => {
