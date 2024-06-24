@@ -1,4 +1,5 @@
 const addButtons = document.querySelectorAll('.add-button');
+
 const addCard = () => {
     const storedCards = localStorage.getItem('journalCards');
     if (storedCards) {
@@ -13,16 +14,24 @@ const addCard = () => {
 };
 
 const addNewCard = () => {
-    saveJournalCard()
     inputHeading.value = '';
     inputTag.value = '';
     inputText.value = '';
-   
+
 }
 
 addButtons.forEach(button => {
     button.addEventListener('click', addNewCard)
 })
 
+const navigateAddButton = () => {
+    addButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            window.location.href = '../pages/write.html';
+        });
+    })
+    addNewCard();
+}
+navigateAddButton();
 addCard();
 

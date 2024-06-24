@@ -1,5 +1,5 @@
 const listContainer = document.querySelector('.list-container');
-const journalCards = JSON.parse(localStorage.getItem('journalCards')) || [];
+const journalCards = JSON.parse(localStorage.getItem('journalCards'));
 
 const displayJournalCards = () => {
     listContainer.innerHTML = '';
@@ -22,8 +22,9 @@ const displayJournalCards = () => {
             </div>
             <div class="body-text">
                 <p>${journalCard.text} </p>
-                <span>Read More</span>
+                
             </div>
+            <div class="span">Read More</div>
         `;
         
         // Attach click event listener to each journal card
@@ -41,6 +42,10 @@ const displayJournalCards = () => {
         listContainer.appendChild(subList);
     });
 };
+
+
+
+
 
 // Call displayJournalCards to render the journal cards
 displayJournalCards();

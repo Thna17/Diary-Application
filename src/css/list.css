@@ -24,6 +24,10 @@ body {
     display: none;
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
 .tab-bar {
     position: fixed;
     bottom: 0;
@@ -274,7 +278,7 @@ body {
     border-radius: 50%;
 }
 
-.body-text p{
+.body-text {
     color: var(--color-gray);
     line-height: 1.6;
     text-overflow: ellipsis;
@@ -285,14 +289,14 @@ body {
 }
 
 
-.body-text span {
+.span {
     color: var(--color-accent);
     text-decoration: underline;
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
-.body-text span:hover {
+.span:hover {
     color: #B70000;
 }
 .footer-container {

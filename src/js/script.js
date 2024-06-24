@@ -3,10 +3,9 @@ const acceptButton = document.getElementById('accept-button');
 const inputHeading = document.getElementById('input-title');
 const inputTag = document.getElementById('input-tag');
 const inputText = document.getElementById('input-body-text');
-let journalCards = [];
 
 const generateUniqueId = () => {
-    return '_' + Math.random().toString(36).substr(2, 9); // Example of generating a random ID
+    return '_' + Math.random().toString(36).substr(2, 9); 
 };
 const getValueHeading = () => inputHeading.value;
 const getValueTag = () => inputTag.value;
@@ -20,8 +19,10 @@ const saveJournalCard = () => {
         text: getValueText()
     };
 
-    journalCards.push(journalCard);
-    localStorage.setItem('journalCards', JSON.stringify(journalCards));
+    let currentData = JSON.parse(localStorage.getItem('journalCards')) || [];
+
+    currentData.push(journalCard);
+    localStorage.setItem('journalCards', JSON.stringify(currentData));
 
 };
 
