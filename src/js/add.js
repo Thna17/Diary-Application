@@ -24,7 +24,6 @@ const navigateAddButton = () => {
             window.location.href = '../pages/write.html';
         });
     })
-    addNewCard();
 }
 navigateAddButton();
 addCard();
