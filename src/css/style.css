@@ -1,0 +1,154 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #2F4858;
+    background-color: #F7F9FB;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.side-bar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile h2 {
+    font-size: 18px;
+    color: #2F4858;
+}
+
+.dashboard-tab {
+    margin-top: 50px;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: #f1f1f1;
+}
+
+.tab .icon {
+    display: flex;
+    align-items: center;
+}
+
+.tab .icon img, .tab .icon svg {
+    margin-right: 15px;
+}
+
+.tab h4 {
+    font-size: 16px;
+    color: #2F4858;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #2F4858;
+}
+
+.sub-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.total-statistics, .monthly-statistics {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.statistics-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    text-align: center;
+}
+
+.statistics-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.statistics-card p {
+    font-size: 24px;
+    color: #2F4858;
+}
+
+.recent-diaries, .recent-lists {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.recent-diaries h3, .recent-lists h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.recent-diaries ul, .recent-lists ul {
+    list-style: none;
+}
+
+.recent-diaries li, .recent-lists li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.diary-date, .list-date {
+    font-size: 14px;
+    color: #999999;
+}
+
+.diary-title, .list-title {
+    font-size: 16px;
+    color: #2F4858;
+}
+
