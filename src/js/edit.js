@@ -1,12 +1,15 @@
 const saveButton = document.getElementById('accept-button');
 const selectedJournal = JSON.parse(localStorage.getItem('selectedJournal'));
-const journalCards = JSON.parse(localStorage.getItem('journalCards'));
+const todaydate = document.querySelectorAll('.date h3, .date-mob h3, .today-date');
 
 const editJournal = () => {
     if (selectedJournal) {
         document.querySelector('.heading input').value = selectedJournal.heading || '';
         document.querySelector('.meta-info .tag input').value = selectedJournal.tag || '';
         document.querySelector('.body-text textarea').value = selectedJournal.text || '';
+        todaydate.forEach(todaydate => {
+            todaydate.textContent = selectedJournal.createdDate;
+        })
     } 
 };
 
@@ -25,6 +28,8 @@ const saveEditJournal = () => {
             text: document.querySelector('.body-text textarea').value
         };
         localStorage.setItem('journalCards', JSON.stringify(journalCards));
+        localStorage.setItem('selectedJournal', JSON.stringify(journalCards[index]));
+        window.location.href = '../pages/view.html'
         console.log(`Object with id ${idJournal} updated successfully.`);
     } else {
         console.log(`Object with id ${idJournal} not found.`);

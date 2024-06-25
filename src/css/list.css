@@ -59,7 +59,9 @@ a {
         padding: 15px 20px;
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.3s ease;
+    
     }
+
     .sidebar .profile {
         display: flex;
         flex-direction: column;
@@ -196,10 +198,24 @@ a {
     width: calc(100% - 40px); /* Adjust width to fit within viewport */
 }
 
+#dates-container div {
+    display: inline-block;
+
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+#dates-container .today {
+    background-color: #3498db; 
+    color: #fff;
+   
+}
+
 .today-date {
     font-family: 'Merriweather', serif;
     font-size: 24px;
-    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -237,6 +253,34 @@ a {
     background-color: var(--color-hover);
 }
 
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 50%; 
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button svg {
+    width: 24px;
+    height: 24px;
+    fill: #003554; 
+}
+
+.exit-button:hover svg {
+    fill: #FF6347;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+.show-current-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
 .list-container {
     display: flex;
     flex-wrap: wrap;
@@ -244,7 +288,7 @@ a {
     gap: 20px;
     padding: 20px;
     background-color: var(--color-background);
-    flex: 1; /* Grow to fill remaining space */
+    flex: 1;
     position: relative;
 }
 
@@ -361,4 +405,24 @@ a {
     }
 }
 
+/* CSS for the calendar and dates */
+.dates-container div {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
 
+.dates-container div.today {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.dates-container div.selected-date {
+    background-color: #ff6347; /* Highlight color */
+    color: #fff;
+}
