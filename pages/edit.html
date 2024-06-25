@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="../src/css/list.css">
     <link rel="stylesheet" href="../src/css/view-card.css">
     <link rel="stylesheet" href="../src/css/write-card.css">
+    <script src="../src/js/calender.js" defer></script>
     <script src="../src/js/edit.js" defer></script>
     <script src="../src/js/remove.js" defer></script>
     <script src="../src/js/navigation.js" defer></script>
+    <script src="../src/js/date.js" defer></script>
 </head>
 <body>
     <div class="nav-bar">
@@ -74,7 +76,19 @@
                 <h1>Diary Application</h1>
             </div>
             <div class="calender">
-                <div class="today-date">17 July, 2024</div>
+                <div class="show-current-date">
+                    <button class="exit-button" id="prev-week">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M21 11H4.414l2.293-2.293a1 1 0 0 0-1.414-1.414l-4 4a1 1 0 0 0 0 1.414l4 4a1 1 0 0 0 1.414-1.414L4.414 13H21a1 1 0 0 0 0-2Z"/>
+                        </svg>
+                    </button>
+                    <div class="today-date ">17 July, 2024</div>
+                    <button class="exit-button rotate" id="next-week">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M21 11H4.414l2.293-2.293a1 1 0 0 0-1.414-1.414l-4 4a1 1 0 0 0 0 1.414l4 4a1 1 0 0 0 1.414-1.414L4.414 13H21a1 1 0 0 0 0-2Z"/>
+                        </svg>
+                    </button>
+                </div>
                 <div class="box-date">
                     <div class="days">
                         <div>MON</div>
@@ -85,14 +99,14 @@
                         <div>SAT</div>
                         <div>SUN</div>
                     </div>
-                    <div class="dates">
-                        <div>17</div>
-                        <div>18</div>
-                        <div>19</div>
-                        <div>20</div>
-                        <div>21</div>
-                        <div>22</div>
-                        <div>23</div>
+                    <div class="dates" id="dates-container"> 
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>10</div>
+                        <div>11</div>
+                        <div>12</div>
+                        <div>13</div>
                     </div>
                 </div>
             </div>

@@ -1,15 +1,13 @@
 const listContainer = document.querySelector('.list-container');
-const journalCards = JSON.parse(localStorage.getItem('journalCards')) || [];
 
-const displayJournalCards = () => {
+const displayJournalCards = (filteredJournals = journalCards) => {
     listContainer.innerHTML = '';
 
-    journalCards.forEach((journalCard, index) => {
+    filteredJournals.forEach((journalCard, index) => {
         const subList = document.createElement('div');
         subList.classList.add('sub-list');
         
-        // Set a unique identifier for each journal card
-        subList.setAttribute('data-id', index);
+        subList.setAttribute('data-id', journalCard.id);
 
         subList.innerHTML = `
             <div class="heading-mood">
@@ -26,15 +24,8 @@ const displayJournalCards = () => {
             <div class="span">Read More</div>
         `;
         
-        // Attach click event listener to each journal card
         subList.addEventListener('click', () => {
-            // Get the id of the clicked journal card
-            const id = subList.getAttribute('data-id');
-            
-            // Store selected journal data in localStorage
-            localStorage.setItem('selectedJournal', JSON.stringify(journalCards[id]));
-            
-            // Navigate to view.html
+            localStorage.setItem('selectedJournal', JSON.stringify(journalCard));
             window.location.href = '../pages/view.html';
         });
 
@@ -42,5 +33,5 @@ const displayJournalCards = () => {
     });
 };
 
-// Call displayJournalCards to render the journal cards
+// Call displayJournalCards to render the journal cards initially
 displayJournalCards();
