@@ -4,151 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Journal</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/sidebar.css">
+    <link rel="stylesheet" href="../src/css/tab-bar.css">
+    <link rel="stylesheet" href="../src/css/calender.css">
     <link rel="stylesheet" href="/src/css/list.css">
-   <script src="../src/js/calender.js" defer></script>
+    <link rel="stylesheet" href="../src/css/footer.css">
+
+    <script src="../src/components/calender.js" defer></script>
+    <script src="../src/components/navbar.js" defer></script>
+    <script src="../src/components/sidebar.js" defer></script>
+    <script src="../src/components/tapbar.js" defer></script>
+    <script src="../src/components/footer.js" defer></script>
+   
+    <script src="../src/js/calender.js" defer></script>
     <script src="../src/js/journalEntries.js" defer></script>
     <script src="/src/js/navigation.js" defer></script>
     <script src="../src/js/date.js" defer></script>
+
 </head>
 <body>
-    <div class="nav-bar">
-        <div>
-            <img src="/assets/icon & Logo/hamburger-icon.svg" alt="">
-        </div>
-        <h2>Diary Application</h2>
-        <div>
-            <img src="/assets/images/photo1718259086.jpeg" alt="" style="width: 30px; height: 30px; border-radius: 50%;">
-        </div>
-    </div>
+    <nav>
+        <navbar-component></navbar-component>
+    </nav>
+
+   <aside>
+        <sidebar-component></sidebar-component>
+   </aside>
+
+   <aside>
+        <tapbar-component></tapbar-component>
+   </aside>
   
-    <div class="sidebar">
-        <div class="tab profile">
-            <img src="/assets/images/photo1718259086.jpeg" alt="" style="width: 60px; height: 60px; border-radius: 50%;">
-            <h2>Bro Bek</h2>
-        </div>
-        <div class="tab">
-            <img src="/assets/icon & Logo/dashboard.svg" alt="">
-            Dashboard
-        </div>
-        <div class="tab list-button">
-            <img src="/assets/icon & Logo/list.svg" alt="">
-            List
-        </div>
-        <div class="tab add-button">
-            <img src="/assets/icon & Logo/add-icon.svg" alt="">
-            Add
-        </div>
-        <div class="tab">
-            <img src="/assets/icon & Logo/notification-icon.svg" alt="">
-            Notification
-        </div>
-        <div class="tab">
-            <img src="/assets/icon & Logo/setting-icon.svg" alt="">
-            Setting
-        </div>
-    </div>
-
-    <div class="tab-bar">
-        <div class="tab">
-            <img src="/assets/icon & Logo/dashboard.svg" alt="">
-        </div>
-        <div class="tab list-button">
-            <img src="/assets/icon & Logo/list.svg" alt="">
-        </div>
-        <div class="tab add-button">
-            <img src="/assets/icon & Logo/add-icon.svg" alt="">
-        </div>
-        <div class="tab">
-            <img src="/assets/icon & Logo/notification-icon.svg" alt="">
-        </div>
-        <div class="tab">
-            <img src="/assets/icon & Logo/setting-icon.svg" alt="">
-        </div>
-    </div>
-
     <!-- Main content area -->
     <div class="content">
         <div class="content-inner">
             <div class="header">
                 <h1>Diary Application</h1>
             </div>
-            <div class="calender">
-                <div class="show-current-date">
-                    <button class="exit-button" id="prev-week">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M21 11H4.414l2.293-2.293a1 1 0 0 0-1.414-1.414l-4 4a1 1 0 0 0 0 1.414l4 4a1 1 0 0 0 1.414-1.414L4.414 13H21a1 1 0 0 0 0-2Z"/>
-                        </svg>
-                    </button>
-                    <div class="today-date ">17 July, 2024</div>
-                    <button class="exit-button rotate" id="next-week">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M21 11H4.414l2.293-2.293a1 1 0 0 0-1.414-1.414l-4 4a1 1 0 0 0 0 1.414l4 4a1 1 0 0 0 1.414-1.414L4.414 13H21a1 1 0 0 0 0-2Z"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="box-date">
-                    <div class="days">
-                        <div>MON</div>
-                        <div>TUE</div>
-                        <div>WED</div>
-                        <div>THU</div>
-                        <div>FRI</div>
-                        <div>SAT</div>
-                        <div>SUN</div>
-                    </div>
-                    <div class="dates" id="dates-container"> 
-                        <div>6</div>
-                        <div>7</div>
-                        <div>8</div>
-                        <div>10</div>
-                        <div>11</div>
-                        <div>12</div>
-                        <div>13</div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="list-container" id="list-container">
-                <!-- Repeat sub-lists as needed -->
-                <div class="sub-list">
-                    <div class="heading-mood">
-                        <div>
-                            <h2>My peaceful day</h2>
-                        </div>
-                        <div>
-                            <img src="/assets/icon & Logo/happy-mood.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="body-text">
-                        <p>Today was the sort of day you read about in books when the author <span>Read More</span></p>
-                    </div>
-                </div>
-
-            </div>
+            <calender-component></calender-component>
+            <div class="list-container" id="list-container"> </div>
         </div>
-
-        <div class="footer-container">
-            <div class="footer-inner">
-                <div class="logo-icon">
-                    <div class="logo">
-                        <img src="/assets/images/anb-logo.png" alt="">
-                    </div>
-                    <div class="icon">
-                        <img src="/assets/icon & Logo/facebook-icon.svg" alt="">
-                        <img src="/assets/icon & Logo/instagram-icon.svg" alt="">
-                        <img src="/assets/icon & Logo/tiktok-icon.svg" alt="">
-                    </div>
-                </div>
-                <div class="line"></div>
-                <div class="copyright">
-                    <h4>©2024 Diary Application. Created by Hong Than Brathna. All rights reserved.</h4>
-                </div>
-                
-            </div>
-        </div>
-    
+        <footer-component></footer-component>
     </div>
-
-
 </body>
 </html>

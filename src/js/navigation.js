@@ -21,4 +21,3 @@ const navigateEditPage = () => {
     window.location.href = '../pages/edit.html';
 }
 editbutton.addEventListener('click', navigateEditPage)
-
