@@ -1,0 +1,112 @@
+.calender {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    width: calc(100% - 40px); /* Adjust width to fit within viewport */
+}
+
+#dates-container div {
+    display: inline-block;
+
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+#dates-container .today {
+    background-color: #3498db; 
+    color: #fff;
+   
+}
+
+.today-date {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.box-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.days, .dates {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.days div, .dates div {
+    width: calc(100% / 7);
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.days div {
+    background-color: #F2F2F2;
+}
+
+.dates div {
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dates div:hover {
+    background-color: var(--color-hover);
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 50%; 
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button svg {
+    width: 24px;
+    height: 24px;
+    fill: #003554; 
+}
+
+.exit-button:hover svg {
+    fill: #FF6347;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+.show-current-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+/* CSS for the calendar and dates */
+.dates-container div {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.dates-container div.today {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.dates-container div.selected-date {
+    background-color: #ff6347; /* Highlight color */
+    color: #fff;
+}
