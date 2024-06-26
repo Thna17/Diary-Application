@@ -11,7 +11,7 @@ class Navbar extends HTMLElement {
             </div>
             <h2>Diary Application</h2>
             <div>
-                <img src="/assets/images/photo1718259086.jpeg" alt="">
+                <img src="../assets/images/msg909395067-175984.jpg" alt="">
             </div>
         </div>
         `

@@ -61,8 +61,18 @@
 .span:hover {
     color: #B70000;
 }
-
-
-
+.empty-journal-message{
+    color: #808080; /* Dark teal color */
+    font-size: 26px;
+    text-align: center;
+    margin-top: 30%;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    
+}
+.empty-journal-message svg {
+    fill: #808080;
+}
 
 

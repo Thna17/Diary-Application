@@ -28,6 +28,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+       
         
      
     }
@@ -35,6 +36,8 @@
         border-radius: 50%;
         width: 48px !important;
         height: 48px !important;
+        object-fit: cover !important;
+        margin: 0 !important;
   
     }
 
