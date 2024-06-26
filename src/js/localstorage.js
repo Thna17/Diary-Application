@@ -4,7 +4,7 @@ const inputTag = document.getElementById('input-tag');
 const inputText = document.getElementById('input-body-text');
 const todaydate = document.querySelectorAll('.date h3, .date-mob h3, .today-date');
 const selectedJournal = JSON.parse(localStorage.getItem('selectedJournal'));
-const journalCards = JSON.parse(localStorage.getItem('journalCards'));
+
 
 const generateUniqueId = () => {
     return '_' + Math.random().toString(36).substr(2, 9); 
