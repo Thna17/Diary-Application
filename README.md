@@ -1,6 +1,3 @@
-It seems you'd like the README.md to be structured and formatted in a comprehensive way. Here's how you can organize your document with the provided information:
-
----
 
 # Diary Application
 
