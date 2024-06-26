@@ -1,6 +1,7 @@
 const addButtons = document.querySelectorAll('.add-button');
 const listButtons = document.querySelectorAll('.list-button');
 const editbutton = document.getElementById('edit-button');
+const emptyJournalMessage = document.getElementById('empty-journal-message')
 
 listButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -17,7 +18,24 @@ const navigateAddButton = () => {
 }
 navigateAddButton();
 
-const navigateEditPage = () => {
-    window.location.href = '../pages/edit.html';
+
+const navigateToWrite = () => {
+    emptyJournalMessage.addEventListener('click', () => {
+        window.location.href = '../pages/write.html';
+    })
 }
-editbutton.addEventListener('click', navigateEditPage)
+
+
+const navigateEditPage = () => {
+    editbutton.addEventListener('click', () => {
+        window.location.href = '../pages/edit.html';
+    })
+    
+}
+if (window.location.pathname.endsWith('/pages/list.html')) {
+    navigateToWrite()
+} 
+if (window.location.pathname.endsWith('/pages/view.html')) {
+    navigateEditPage();
+}   
+

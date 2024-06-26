@@ -38,18 +38,18 @@ const generateWeekDates = (startDate) => {
 
         dateDiv.addEventListener('click', () => {
             const clickedDate = `${day} ${month}, ${year}`;
-            console.log('Clicked date:', clickedDate);
-
-            const filteredJournals = journalCards.filter(journal => journal.createdDate === clickedDate);
-
-            console.log('Filtered journals:', filteredJournals);
-            if (window.location.pathname.endsWith('/pages/list.html')) {
-                displayJournalCards(filteredJournals);
-            }  
+            handleDateClick(clickedDate);
         });
 
         datesContainer.appendChild(dateDiv);
     }
+};
+
+const handleDateClick = (clickedDate) => {
+    const filteredJournals = journalCards.filter(journal => journal.createdDate === clickedDate);
+    if (window.location.pathname.endsWith('/pages/list.html')) {
+        displayJournalCards(filteredJournals, clickedDate);
+    }  
 };
 
 const showPreviousWeek = () => {
@@ -68,3 +68,4 @@ document.getElementById('next-week').addEventListener('click', showNextWeek);
 // Initialize
 updateTodayDate();
 generateWeekDates(currentWeekStart);
+handleDateClick(todayDate);
