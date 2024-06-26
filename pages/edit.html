@@ -3,36 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List Journal</title>
+    <title>Edit</title>
     <link rel="stylesheet" href="../src/css/style.css">
     <link rel="stylesheet" href="../src/css/sidebar.css">
     <link rel="stylesheet" href="../src/css/tab-bar.css">
     <link rel="stylesheet" href="../src/css/calender.css">
-    <link rel="stylesheet" href="/src/css/list.css">
+    <link rel="stylesheet" href="../src/css/list.css">
+    <link rel="stylesheet" href="../src/css/view-card.css">
+    <link rel="stylesheet" href="../src/css/write-card.css">
     <link rel="stylesheet" href="../src/css/footer.css">
 
-    <script src="../src/components/calender.js" defer></script>
     <script src="../src/components/navbar.js" defer></script>
     <script src="../src/components/sidebar.js" defer></script>
     <script src="../src/components/tapbar.js" defer></script>
+    <script src="../src/components/calender.js" defer></script>
     <script src="../src/components/footer.js" defer></script>
-   
-    <script src="../src/js/calender.js" defer></script>
-    <script src="../src/js/journalEntries.js" defer></script>
-    <script src="/src/js/navigation.js" defer></script>
-    <script src="../src/js/date.js" defer></script>
+    <script src="../src/components/inputCard.js" defer></script>
 
+    <script src="../src/js/calender.js" defer></script>
+    <script src="../src/js/edit.js" defer></script>
+    <script src="../src/js/remove.js" defer></script>
+    <script src="../src/js/navigation.js" defer></script>
+    <script src="../src/js/date.js" defer></script>
+    
 </head>
 <body>
     <nav>
         <navbar-component></navbar-component>
     </nav>
 
-   <aside>
+    <aside>
         <sidebar-component></sidebar-component>
-   </aside>
+    </aside>
 
-   <aside>
+    <aside>
         <tapbar-component></tapbar-component>
    </aside>
   
@@ -43,9 +47,14 @@
                 <h1>Diary Application</h1>
             </div>
             <calender-component></calender-component>
-            <div class="list-container" id="list-container"> </div>
+
+            <input-card-component></input-card-component>
+            
         </div>
+
         <footer-component></footer-component>
     </div>
+
+    
 </body>
 </html>
