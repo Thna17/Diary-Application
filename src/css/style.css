@@ -17,6 +17,7 @@ body {
     min-height: 100vh;
 }
 
+/* Hide specific elements */
 .nav-bar,
 .sidebar,
 .header,
@@ -34,6 +35,8 @@ a {
     width: 100%;
     
 }
+
+/* Profile section styles */
 .profile {
     text-align: center;
 }

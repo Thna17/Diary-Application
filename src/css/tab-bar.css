@@ -1,5 +1,6 @@
 @media (max-width: 677px) {
 
+    /* Navbar styling for smaller screens */
     .nav-bar {
         display: flex;
         justify-content: space-between;
@@ -7,9 +8,10 @@
         padding: 10px 20px;
         background-color: #FFFFFF;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 1000; /* Ensure it's above other content */
+        z-index: 1000; 
     }
     
+    /* Style for profile image in the navbar */
     .nav-bar img {
         width: 30px;
         height: 30px;
@@ -18,10 +20,12 @@
         cursor: pointer;
     }
     
+    /* Hover effect for profile image */
     .nav-bar img:hover {
         transform: scale(1.1);
     }
     
+    /* Style for text in the navbar */
     .nav-bar h2 {
         font-family: 'Lato', sans-serif;
         font-size: 20px;
@@ -31,18 +35,20 @@
         padding: 0;
     }
     
+     /* Tab bar styling for smaller screens */
     .tab-bar {
-        display: flex; /* Show tab bar for smaller screens */
+        display: flex; 
         justify-content: space-around;
         align-items: center;
         padding: 20px;
         background-color: #FFFFFF;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 12px;
-        margin-top: auto; /* Align at the bottom */
-        z-index: 1000; /* Ensure it's above other content */
+        margin-top: auto; 
+        z-index: 1000;
     }
 
+    /* Styling for individual tabs in the tab bar */
     .tab-bar .tab {
         display: flex;
         justify-content: center;
@@ -54,16 +60,19 @@
         transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
+     /* Hover effect for tabs in the tab bar */
     .tab-bar .tab:hover {
         background-color: var(--color-hover);
         transform: scale(1.1);
     }
 
+     /* Styling for icons inside tabs */
     .tab-bar .tab img {
         width: 24px;
         height: 24px;
     }
 
+    /* Content section styling */
     .content {
         padding-bottom: 100px; 
         flex: 1;
@@ -71,6 +80,8 @@
         display: flex;
         flex-direction: column;
     }
+
+    /* Inner content area to occupy remaining space */
     .content-inner {
         flex-grow: 1;
     }

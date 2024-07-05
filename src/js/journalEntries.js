@@ -1,15 +1,22 @@
+// Get reference to the list container element
 const listContainer = document.querySelector('.list-container');
+
+// Function to get formatted date string (dd mm, yyyy)
 const getDate = (date) => {
     const day = String(date.getDate()).padStart(2, '0');
     const month = String(date.getMonth() + 1).padStart(2, '0'); // Ensure month is two digits
     const year = date.getFullYear();
     return `${day} ${month}, ${year}`;
 };
+
+// Get today's date in formatted string
 const todayDate = getDate(new Date());
 
-
+// Function to display journal cards based on filtered journals and clicked date
 const displayJournalCards = (filteredJournals = journalCards, clickedDate) => {
     if ((clickedDate === todayDate) && (filteredJournals.length <= 0)) {
+
+        // Display message for today's date with no journal entries
         listContainer.innerHTML =  `
             <div class="empty-journal-message" id="empty-journal-message">
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
@@ -19,6 +26,8 @@ const displayJournalCards = (filteredJournals = journalCards, clickedDate) => {
             </div>
         `
     }   else if ((filteredJournals.length <= 0) && (clickedDate !== todayDate)) {
+
+        // Display message for other dates with no journal entries
         listContainer.innerHTML = `
         <div class="empty-journal-message">
              <img src="../assets/images/folder.png" alt="">  
@@ -27,6 +36,8 @@ const displayJournalCards = (filteredJournals = journalCards, clickedDate) => {
         `
     }
     else {
+
+        // Display each journal card in filteredJournals
         listContainer.innerHTML = '';
         filteredJournals.forEach((journalCard, index) => {
             const subList = document.createElement('div');
