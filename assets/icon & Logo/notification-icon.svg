@@ -1,4 +1,13 @@
 <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M16.4167 7C16.4167 5.60761 15.8635 4.27226 14.879 3.28769C13.8944 2.30312 12.559 1.75 11.1667 1.75C9.77427 1.75 8.43891 2.30312 7.45435 3.28769C6.46978 4.27226 5.91666 5.60761 5.91666 7C5.91666 13.125 3.29166 14.875 3.29166 14.875H19.0417C19.0417 14.875 16.4167 13.125 16.4167 7Z" stroke="#2F4858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M12.6804 18.375C12.5266 18.6402 12.3058 18.8603 12.0401 19.0133C11.7744 19.1664 11.4732 19.2469 11.1666 19.2469C10.8601 19.2469 10.5589 19.1664 10.2932 19.0133C10.0275 18.8603 9.80673 18.6402 9.65289 18.375" stroke="#2F4858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAAD4F;stop-opacity:1" />
+      <stop offset="35%" style="stop-color:#DD2A7B;stop-opacity:1" />
+      <stop offset="62%" style="stop-color:#9537B0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#515BD4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path d="M16.4167 7C16.4167 5.60761 15.8635 4.27226 14.879 3.28769C13.8944 2.30312 12.559 1.75 11.1667 1.75C9.77427 1.75 8.43891 2.30312 7.45435 3.28769C6.46978 4.27226 5.91666 5.60761 5.91666 7C5.91666 13.125 3.29166 14.875 3.29166 14.875H19.0417C19.0417 14.875 16.4167 13.125 16.4167 7Z" stroke="url(#grad4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M12.6804 18.375C12.5266 18.6402 12.3058 18.8603 12.0401 19.0133C11.7744 19.1664 11.4732 19.2469 11.1666 19.2469C10.8601 19.2469 10.5589 19.1664 10.2932 19.0133C10.0275 18.8603 9.80673 18.6402 9.65289 18.375" stroke="url(#grad4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
+

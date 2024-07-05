@@ -1,6 +1,8 @@
 @media (min-width: 678px) {
+    
+     /* Sidebar styles */
     .sidebar {
-        display: flex; /* Show sidebar for tablets and larger */
+        display: flex;
         flex-direction: column;
         background-color: #FFFFFF;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -11,10 +13,12 @@
         left: 0;
         bottom: 0;
         width: 250px;
-        z-index: 1000; /* Ensure it's above other content */
-
+        z-index: 1000; 
+        
     }
 
+
+    /* Styling for sidebar tabs */
     .sidebar .tab {
         display: flex;
         align-items: center;
@@ -24,14 +28,14 @@
     
     }
 
+     /* Profile section within the sidebar */
     .sidebar .profile {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-       
-        
-     
+        gap: 10px; 
     }
+
+
     .sidebar .profile img{
         border-radius: 50%;
         width: 48px !important;
@@ -41,6 +45,7 @@
   
     }
 
+    /* Hover effect for sidebar tabs */
     .sidebar .tab:hover {
         background-color: var(--color-hover);
     }
@@ -49,8 +54,11 @@
         width: 24px;
         height: 24px;
         margin-right: 10px;
+        
+
     }
 
+    /* Content area styles */
     .content {
         margin-left: 250px; 
         flex: 1;
@@ -62,6 +70,8 @@
     .content-inner {
         flex-grow: 1;
     }
+
+    /* Header styling */
     .header {
         display: flex;
         justify-content: center;
@@ -72,13 +82,19 @@
         margin-bottom: 20px;
         border-radius: 12px;
         transition: background-color 0.3s ease, transform 0.3s ease;
+        
+
+        
     }
-    
+
+    /* Hover effect for header */
     .header:hover {
         background-color: var(--color-background);
         transform: translateY(-5px);
+        
     }
     
+    /* Header title */
     .header h1 {
         font-family: 'Playfair Display', serif;
         font-size: 36px;
@@ -86,5 +102,4 @@
         color: var(--color-primary);
         margin: 0;
     }
-    
 }

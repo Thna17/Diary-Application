@@ -4,12 +4,18 @@ class Footer extends HTMLElement {
     }
     connectedCallback() {
         this.innerHTML =   `
-          <div class="footer-container">
+
+            <!-- Footer Container -->
+        <footer class="footer-container">
             <div class="footer-inner">
                 <div class="logo-icon">
+
+                    <!-- Logo Section -->
                     <div class="logo">
-                        <img src="/assets/images/anb-logo.png" alt="">
+                        <img src="../assets/images/ANB logo.png" alt="">
                     </div>
+
+                     <!-- Social Media Icons -->
                     <div class="icon">
                          <a href="https://www.facebook.com/profile.php?id=100011506560297&mibextid=LQQJ4d">
                             <img src="/assets/icon & Logo/facebook-icon.svg" alt="">
@@ -22,12 +28,16 @@ class Footer extends HTMLElement {
                          </a>
                     </div>
                 </div>
+
+                <!-- Separator Line -->
                 <div class="line"></div>
+
+                  <!-- Copyright Information -->
                 <div class="copyright">
                     <h4>©2024 Diary Application. Created by Hong Than Brathna. All rights reserved.</h4>
                 </div>
             </div>
-        </div>
+        </footer>
         `
     }
 }
