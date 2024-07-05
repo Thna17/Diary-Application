@@ -1,12 +1,14 @@
+/* Calendar container styles */
 .calender {
     background-color: #FFFFFF;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 20px;
     margin: 20px;
-    width: calc(100% - 40px); /* Adjust width to fit within viewport */
+    width: calc(100% - 40px); 
 }
 
+/* Styles for individual dates in the calendar */
 #dates-container div {
     display: inline-block;
 
@@ -16,24 +18,29 @@
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
+
+/* Styles for today's date */
 #dates-container .today {
     background-color: #3498db; 
     color: #fff;
    
 }
 
+/* Styles for the date displayed prominently */
 .today-date {
     font-family: 'Merriweather', serif;
     font-size: 24px;
     text-align: center;
 }
 
+/* Container for date box */
 .box-date {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Styles for days and dates containers */
 .days, .dates {
     display: flex;
     justify-content: space-between;
@@ -49,19 +56,23 @@
     font-weight: 700;
 }
 
+/* Styles for days background */
 .days div {
     background-color: #F2F2F2;
 }
 
+/* Styles for individual dates */
 .dates div {
     border-radius: 4px;
     cursor: pointer;
 }
 
+/* Hover effect for dates */
 .dates div:hover {
     background-color: var(--color-hover);
 }
 
+/* Button styles */
 button {
     padding: 12px;
     border: none;
@@ -71,18 +82,23 @@ button {
     transition: background-color 0.3s ease;
 }
 
+/* SVG icon styles */
 button svg {
     width: 24px;
     height: 24px;
     fill: #003554; 
 }
 
+/* Hover effect for exit button */
 .exit-button:hover svg {
     fill: #FF6347;
 }
+
 .rotate {
     transform: rotate(180deg);
 }
+
+/* Styles for displaying current date */
 .show-current-date {
     display: flex;
     justify-content: space-between;
@@ -101,12 +117,14 @@ button svg {
     border-radius: 50%;
 }
 
+/* Styles for today's date in the dates container */
 .dates-container div.today {
     background-color: #007bff;
     color: #fff;
 }
 
+/* Styles for selected date in the dates container */
 .dates-container div.selected-date {
-    background-color: #ff6347; /* Highlight color */
+    background-color: #ff6347; 
     color: #fff;
 }

@@ -1,3 +1,4 @@
+/* Input styling for heading */
 .heading input {
     width: 100%;
     border: none;
@@ -5,22 +6,27 @@
     font-size: 36px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
-
 }
+
+/* Input styling for heading */
 .heading input:focus {
     outline: none;
-  
 }
+
+/* Margin for SVG icons and tag text */
 .meta-info .created-date svg, .meta-info .tag h3 {
     margin-right: 5px;
 }
+
+/* Styling for tags input */
 .input-tag {
     color: #8798AD;
     font-size: 18px;
     font-weight: 600;
     border: none;
-
 }
+
+/* Styling for body text input */
 .input-body-text {
     width: 100%;
     font-size: 18px;
@@ -38,6 +44,8 @@
 .input-tag:focus, .input-body-text:focus {
     outline: none;
 }
+
+/* Accept button styling */
 .accept-button {
     display: flex;
     align-items: center;
@@ -53,6 +61,7 @@
     transition: background-color 0.3s ease;
 }
 
+/* Icon within accept button */
 .accept-button svg {
     width: 20px;
     height: 20px;
@@ -63,3 +72,17 @@
 .accept-button:hover {
     background-color: #45a049;
 }
+
+input[type="date"] {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="date"]:focus {
+    outline: none;
+    border-color: #6c8cbc;
+    box-shadow: 0 0 5px rgba(108, 140, 188, 0.5);
+  }

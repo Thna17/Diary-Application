@@ -140,29 +140,31 @@ diary-app/
 
 ### Color Scheme
 
+### Color Scheme
+
 - **Primary Colors:**
-  - **diary-soft-blue**: #EEF5FF (Soft Blue)
+  - **diary-soft-blue**: #3A5262 (Soft Blue)
   - **diary-light-azure**: #B4D4FF (Light Azure)
 
 - **Background Colors:**
-  - **diary-sky-blue**: #86B6F6 (Sky Blue)
+  - **diary-sky-blue**: #f0f0f0 (Sky Blue)
   - **diary-deep-teal**: #176B87 (Deep Teal)
 
 - **Text Colors:**
   - **diary-text-white**: #FFFFFF (White)
-  - **diary-text-gray**: #757575 (Warm Gray)
+  - **diary-text-gray**: #646464 (Warm Gray)
 
 ### Fonts
 
-- **Google Font:** Lora ([Link](https://fonts.google.com/specimen/Lora))
-- **Adobe Font:** Raleway ([Link](https://fonts.google.com/specimen/Raleway))
+- **Google Font:** [Playfair Display](https://fonts.google.com/specimen/Playfair+Display)
+- **Adobe Font:** [Merriweather](https://fonts.google.com/specimen/Merriweather)
 
 #### Font Usage
 
-- **Headings:** Lora, 700 weight
-- **Subheadings:** Lora, 400 weight
-- **Body Text:** Raleway, 400 weight
-- **Quotes and Special Text:** Raleway, 400 italic
+- **Headings:** Lato, 700 weight
+- **Subheadings:** Lato, 400 weight
+- **Body Text:** Open Sans, 400 weight
+- **Quotes and Special Text:** Open Sans, 400 italic
 
 ### Space
 
@@ -279,7 +281,6 @@ function fetchData(url) { ... }
 
 ## Version Control
 
-![Git Flow Diagram](https://prod-files-secure.s3.us-west-2.amazonaws.com/d35120b4-4385-4ff8-8cd8-b8821e052c53/ccf151d1-d3bf-4209-bbf8-d41168579922/git_flow_diagram.png)
 ![alt text](./assets/images/CyberNexus%20GitFlow%20Diagram.png)
 ### Issue Naming Convention
 
